@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Formulários em java script </title>
+	<style type="text/css">
+		.esconder{ 
+       display: none;
+		 }
+	</style>
+</head>
+<body>
+<!-- onsubmit="pegarDados()"> -->
+ <form> <!-- onsubmit="pegarDados()"> -->
+ 	<p> campo de texto:<input type="text" id="texto" name="texto"></p>
+
+    <p> campo de telefone:
+ 		<input type="tel" id="fone"> </p>
+
+ 		<p> campo de email:
+ 		<input type="email" id="e-mail" name="email"> </p>
+
+ 	<p> campo de senha:
+   <input type="password" id="senha" name="senha"></p>
+
+
+
+
+
+
+
+ 	<div> cursos:
+
+<label for="info"> informática </label>
+<input type="checkbox" id="info"> <br>
+<label for="adm"> Administração </label>
+<input type="checkbox" id="adm"> <br>
+<label for="enf"> enfermagem </label>
+<input type="checkbox" id="enf"> <br>
+ 	</div> 
+ 	
+
+
+
+ 	<fieldset>
+ 		<legend> Campo de rádio</legend>
+ 		<label for="info2"> informática </label>
+<input type="radio" name=seu curso id="info2"> <br>
+<label for="adm2"> Administração </label>
+<input type="radio" name="seu curso" id="adm2"> <br>
+<label for="enf2"> enfermagem </label>
+<input type="radio" name="seu curso" id="enf2"> <br>
+ 	</fieldset>
+
+
+<fieldset>
+	<legend> campo oculto </legend>
+	<input type="hidden" name="oculto" id="oculto" value="9" >
+</fieldset>
+
+<fieldset>
+	<legend> campo do tipo number </legend>
+	<input type="number" name="num" id="num">
+</fieldset>
+
+<fieldset>
+	<legend> campo de data </legend>
+	<input type="date" name="data" id="data">
+</fieldset>
+ 
+ <fieldset>
+	<legend> campo de hora</legend>
+	<input type="time" name="hora" id="hora">
+</fieldset>
+
+<fieldset>
+	<legend> campo de valor (range)</legend>
+	<input type="range"  id="range" min="10" max="100">
+</fieldset>
+
+<fieldset>
+	<legend> validando campo Select</legend>
+	<label for="prifaixa"> 1°faixa:</label>
+     <select name="prifaixa" id="prifaixa">
+     	<option value="0"> preto</option>
+     	<option value="1"> marrom</option>
+     	<option value="2"> vermelho</option>
+     	<option value="3"> laranja</option>
+     </select>
+</fieldset>
+
+
+<p><button type="reset"> limpar </button></p>
+<p><button type="button" onclick="pegarDados()">botão comum</button></p>
+
+<p><button type="subtmit"> submeter form </button></p>
+</form>
+
+<hr>
+<div class="esconder"> Resumo </div>
+
+<div id="campotexto"></div> 
+<div id="campotelefone"></div> 
+ <div id="campoemail" ></div>
+ <div id="camposenha" ></div>
+ <div id="campoinfo"></div>
+ <div id="campoadm"></div>
+ <div id="campoenf"></div>
+ <div id="campoinfo2"></div>
+ <div id="campoadm2"></div>
+ <div id="campoenf2"></div>
+ <div id="campooculto"></div>
+ <div id="camponum"></div>
+<div id="campodata"></div>
+<div id="campohora"></div>
+<div id="camporange"></div>
+<div id="campofaixa"></div>
+
+<!--<script type="text/javascript">
+	function pegarDados(){
+			alert("ok")
+	}
+</script> -->
+
+<script src="script.js"></script>
+
+
+
+</body>
+</html>

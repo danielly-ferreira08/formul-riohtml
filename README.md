@@ -1,2 +1,4 @@
 # formul-riohtml
-validando os campos do formulário. Aluna: Danielly Gomes Ferreira 2°I
+validando os campos do formulário.
+turma: 2°I
+Aluna: Danielly Gomes Ferreira
